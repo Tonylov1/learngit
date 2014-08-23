@@ -23,6 +23,11 @@ Git 用法总结：
 push到远程服务器：
 1、关联一个远程库
 		git remote add origin https://github.com/path/repo-name.git
+	使用上述的命令，以后每次提交的时候都需要输入用户名和密码，比较麻烦，可以换成下面的命令：
+		git remote add origin git@github.com/path/repo-name.git
+	如果已经使用了第一条命令，想切换到第二条命令的模式，可以用下面的命令修改：
+		git remote set-url origin git@github.com/path/repo-name.git
+	这样，以后push就不用输入用户名和密码了。
 2、关联后，使用
 		git push -u origin master
 	第一次推送master分支的所有内容
