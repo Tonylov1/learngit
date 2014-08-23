@@ -34,3 +34,15 @@ push到远程服务器：
 3、以后每次提交，使用
 		git push origin master
 		
+clone到本地：
+		git clone git@github.com/path/repo-name.git
+
+creating a new branch:
+		git branch new_branch_name
+	or:
+		git checkout -b new_branch_name
+	the latter one wiil switch to the new branch automatically	
+switching to a branch:
+		git checkout new_branch_name
+		
+		
