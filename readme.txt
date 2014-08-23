@@ -28,3 +28,5 @@ push到远程服务器：
 	第一次推送master分支的所有内容
 3、以后每次提交，使用
 		git push origin master
+		
+设置了ssh，但是每次push都要输入用户名和密码，正在寻求解决方案。。。
