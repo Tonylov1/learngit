@@ -8,6 +8,7 @@ Git has a mutable index called stage.
 
 Git tracks changes of files.
 
+--------------------------------------------------------------------------------
 Git 用法总结：
 1、如果修改了工作区的文件，尚未add，则可以使用
      git checkout -- file
@@ -19,7 +20,8 @@ Git 用法总结：
 3、如果已经commit了文件，但是还没有推送到远程库，可以使用版本回退的方法回退到上一个版本。
 	git reset --hard HEAD^
 4、如果已经推送到远程服务器，呃，木有办法了。。。
-	
+
+------------------------------------server---------------------------------------	
 push到远程服务器：
 1、关联一个远程库
 		git remote add origin https://github.com/path/repo-name.git
@@ -37,6 +39,7 @@ push到远程服务器：
 clone到本地：
 		git clone git@github.com/path/repo-name.git
 
+-------------------------------------branch----------------------------------------		
 creating a new branch:
 		git branch new_branch_name
 	or:
@@ -44,5 +47,10 @@ creating a new branch:
 	the latter one wiil switch to the new branch automatically	
 switching to a branch:
 		git checkout new_branch_name
-		
+merge a branch to master:
+		git merge new_branch_name
+delete a branch:
+		git branch -d new_branch_name
+
+
 		
