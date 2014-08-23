@@ -20,3 +20,11 @@ Git 用法总结：
 	git reset --hard HEAD^
 4、如果已经推送到远程服务器，呃，木有办法了。。。
 	
+push到远程服务器：
+1、关联一个远程库
+		git remote add origin https://github.com/path/repo-name.git
+2、关联后，使用
+		git push -u origin master
+	第一次推送master分支的所有内容
+3、以后每次提交，使用
+		git push origin master
