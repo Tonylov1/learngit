@@ -27,11 +27,10 @@ push到远程服务器：
 		git remote add origin git@github.com/path/repo-name.git
 	如果已经使用了第一条命令，想切换到第二条命令的模式，可以用下面的命令修改：
 		git remote set-url origin git@github.com/path/repo-name.git
-	这样，以后push就不用输入用户名和密码了。
+	这样，以后push就不用输入用户名和密码了。（需要在repo页面，右下角选择clone with ssh）。
 2、关联后，使用
 		git push -u origin master
 	第一次推送master分支的所有内容
 3、以后每次提交，使用
 		git push origin master
 		
-设置了ssh，但是每次push都要输入用户名和密码，正在寻求解决方案。。。
