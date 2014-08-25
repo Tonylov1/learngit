@@ -39,6 +39,19 @@ push到远程服务器：
 clone到本地：
 		git clone git@github.com/path/repo-name.git
 
+更新至本地：
+		git fetch origin master #update local file from server
+		git log -p master..origin/master	#compare diff
+		git merge origin/master		#merge
+	或者
+		git fetch origin master:tmp
+		git diff tmp	#compare difference
+		git merge tmp	#merge to master
+	或者
+		git pull origin master   #直接从服务器同步并合并到本地，不执行diff检查
+		
+		
+
 -------------------------------------branch----------------------------------------		
 creating a new branch:
 		git branch new_branch_name
